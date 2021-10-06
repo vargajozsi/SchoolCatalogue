@@ -1,0 +1,2 @@
+# SchoolCatalogue
+Codecademy School Catalogue
