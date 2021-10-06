@@ -25,15 +25,22 @@ class School {
     return this._numberOfStudents;
   }
   // 5.Create a setter for numberOfStudents. The method should first check if the input (newNumberOfStudents) is a number...
-  set numberOfStudents(numStud) {
-    typeof numStud === "number"
-      ? (this._numberOfStudents = numStud)
+  set numberOfStudents(newNumber) {
+    typeof newNumber === 'number'
+      ? this._numberOfStudents = newNumber
       : console.log("Invalid input: numberOfStudents must be set to a Number.");
   }
-
+//6.Under your getters, create a method named quickFacts that logs the following string to the console:
   quickFacts() {
     console.log(
       `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
     );
   }
+
+  //7.Under .quickFacts(), create a static method named pickSubstituteTeacher. This method will receive one parameter, named substituteTeachers. The substituteTeachers parameter will take an array of strings...
+  static pickSubstituteTeacher(substituteTeachers) {
+
+  }
+
 }
+
